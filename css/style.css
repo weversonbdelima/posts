@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+header {
+    background-color: rgb(148, 0, 211);
+    color: rgb(255, 255, 255);
+    height: 64px;
+    padding: 10px;
+    
+}
+header h1{
+    margin-left: 70px;
+}
+#app{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 70vw; 
+}
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    
+ 
+}
+#produto{
+    margin: 20px;
+}
+#produto-corpo{
+    display: flex;
+    flex-direction: column;
+}
+#produto-corpo span, label{
+    margin: 10px 0;
+    font-weight: bold;
+}
