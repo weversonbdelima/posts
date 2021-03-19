@@ -17,6 +17,7 @@
 </head>
 <body>
     <div id="app">
+            <count-post v-bind:posts="posts"></count-post>
             <create-post @event-create-post="adicionarPost"></create-post>
             <list-post @event-deletar-post-avo="deletarPost"  v-bind:posts="posts"></list-post>      
     </div>

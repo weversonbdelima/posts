@@ -14,10 +14,11 @@
     padding: 20px;
     color: rgb(255, 255, 255);
     min-width: 20vw;
-   
+    min-height: 100vw;
 }
 #create-post label{
     margin: 10px 0;
+
 }
 #create-post input{
     padding: 5px;
@@ -28,11 +29,13 @@
 }
 
 #list-post{
+    padding-top: 64px;
     display: flex;
     flex-wrap: wrap;
     min-height: 100vh;
-    min-width: 100vw;
+    min-width: 80vw;
     background-color: rgb(59, 136, 224);
+
 }
 
 #post{
@@ -58,4 +61,14 @@
     position: relative;
 
     left: 220px;
+}
+#count-post{
+    position: absolute;
+    left: 90%;
+    width: 120px;
+    height: 40px;
+    background-color: var(--bs-red);
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 0 0 5px 5px;
 }

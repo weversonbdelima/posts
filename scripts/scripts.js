@@ -1,3 +1,25 @@
+//Component list-post
+Vue.component('count-post',{
+    props:{
+        posts: []
+    },
+    template:`
+    <div id="count-post" >
+        <h5>Posts: {{this.posts.length}}</h5>
+    </div>
+    `,
+    methods:{
+        createPost: function(){
+            //Insere data de criação do post
+            this.post.data = new Date();
+            this.$emit('event-create-post', this.post);
+        console.log(this.post)
+        },
+        
+    }
+    
+})
+
 
 
 //definição
@@ -80,6 +102,18 @@ Vue.component('create-post',{
         
     }
     
+})
+
+//Component count-post
+Vue.component('count-post ',{
+    props:{
+        posts: Array
+    },
+    template:`
+    <div id="count-post">
+        fewfsdfd
+    </div>
+    `,
 })
 
 
