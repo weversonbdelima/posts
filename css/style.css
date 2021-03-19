@@ -1,41 +1,61 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 #app{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-width: 70vw; 
-}
-#container{
-    display: flex;
-    flex-wrap: wrap;
-    
- 
 }
 
-header {
+#create-post{
     background-color: var(--bs-blue);
+    display:flex;
+    flex-direction: column;
+    padding: 20px;
     color: rgb(255, 255, 255);
-    height: 64px;
-    padding: 10px;
-    
+    min-width: 20vw;
+   
 }
-header h1{
-    margin-left: 70px;
+#create-post label{
+    margin: 10px 0;
+}
+#create-post input{
+    padding: 5px;
+}
+#create-post textarea{
+    padding: 10px;
+    height: 220px;
+}
+
+#list-post{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: rgb(59, 136, 224);
 }
 
 #post{
-    margin: 20px;
-}
-#card{
     height: 220px;
-    
-
+    width: 320px;
+    margin: 20px;
+    transition: 0.1s ease-in-out
+     
+}
+#post:hover{
+    transform: scale(1.05);
 }
 
-#data{
+
+#post #data{
     position: relative;
-    top: 70px;
+    top: 40px;
     opacity: 0.7;
+    font-style: italic;
+}
+
+#post button{
+    position: relative;
+
+    left: 220px;
 }
