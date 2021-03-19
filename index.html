@@ -12,23 +12,21 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
         <!--CSS-->
         <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Produtos</title>
+    <title>Blogger</title>
     
 </head>
 <body>
     <div id="app">
         <header>
-            <h1>Total: {{total}}</h1>
+            <h1>Posts</h1>
         </header>
         <div id="container" class="container">
-            <div v-for="produto in produtos">
-                <produto ref="subTotal"
-                    v-bind:nome="produto.nome"
-                    v-bind:image="produto.image"
-                    v-bind:preco="produto.preco"
-                    @child-subtotal="getTotal"
-                ></produto>
-            </br>
+            <div v-for="post in posts">
+                <post
+                v-bind:title="post.title"
+                v-bind:descrisao="post.descrisao"
+                v-bind:data="post.data"
+                ></post>
             </div>
         </div>
         
